@@ -14,13 +14,13 @@ export default function Footer() {
               fast, and modern websites that build trust and attract customers.
             </p>
             <div className={styles.socialLinks}>
+              <a href="https://facebook.com/iam.amirkhasru" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                Facebook
+              </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 LinkedIn
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                Twitter
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <a href="https://github.com/amirkhasrux" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 GitHub
               </a>
             </div>
@@ -52,9 +52,10 @@ export default function Footer() {
           <div className={styles.footerLinks}>
             <h4>Contact</h4>
             <ul>
-              <li>hello@webora.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li>Amir Khasru</li>
+              <li>amirkhasru32@gmail.com</li>
+              <li>+8801632323161</li>
+              <li>Apbn Staff Quater, Uttara Sector-2, Dhaka</li>
             </ul>
           </div>
         </div>
