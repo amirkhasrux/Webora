@@ -1,0 +1,182 @@
+.contactPage {
+  min-height: 100vh;
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+.header {
+  padding: var(--spacing-3xl) 0 var(--spacing-xl);
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  margin-bottom: var(--spacing-xl);
+}
+
+.contactSection {
+  padding: var(--spacing-3xl) 0;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--spacing-2xl);
+  align-items: start;
+}
+
+.formWrapper {
+  order: 1;
+}
+
+.contactInfo {
+  order: 2;
+  position: sticky;
+  top: 100px;
+}
+
+.contactInfo h3 {
+  font-size: 1.75rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.contactInfo > p {
+  font-size: 1.0625rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-xl);
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.infoItem {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: start;
+}
+
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-accent) 0%, #8b5cf6 100%);
+  border-radius: var(--radius-md);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.infoItem h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.infoItem a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  transition: color var(--transition-fast);
+}
+
+.infoItem a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.infoItem p {
+  color: var(--color-text-light);
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.availability {
+  background-color: var(--color-background-alt);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.availability h4 {
+  font-size: 1.125rem;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.availability p {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.375rem;
+}
+
+.availability p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .contactPage {
+    padding-top: 100px; /* More space on tablet */
+  }
+
+  .header {
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .contactSection {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .formWrapper {
+    order: 2;
+  }
+
+  .contactInfo {
+    order: 1;
+    position: static;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .contactPage {
+    padding-top: 80px; /* Extra space on mobile to match Hero section */
+  }
+
+  .header {
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+  }
+
+  .contactSection {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .infoList {
+    gap: var(--spacing-md);
+  }
+
+  .infoItem {
+    gap: var(--spacing-sm);
+  }
+
+  .iconWrapper {
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+  }
+
+  .availability {
+    padding: var(--spacing-md);
+  }
+}
+

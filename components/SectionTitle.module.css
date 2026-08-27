@@ -1,0 +1,25 @@
+.sectionTitle {
+  margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle.centered {
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.subtitle {
+  font-size: clamp(1.0625rem, 2vw, 1.25rem);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin: 0;
+}

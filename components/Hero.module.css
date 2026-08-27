@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 80px; /* Account for fixed navbar */
+}
+
+.heroContainer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: var(--spacing-3xl) 0;
+}
+
+.heroContent {
+  max-width: 800px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-lg);
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.subheadline {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: var(--spacing-xl);
+  max-width: 650px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ctaButtons {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 80vh;
+    padding-top: 100px; /* More space on tablet */
+  }
+
+  .heroContainer {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .heroContent {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .subheadline {
+    max-width: 100%;
+  }
+
+  .ctaButtons {
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 70vh;
+    padding-top: 120px; /* Extra space on mobile for breathing room */
+  }
+
+  .heroContainer {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ctaButtons a {
+    width: 100%;
+  }
+}
