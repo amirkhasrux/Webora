@@ -44,25 +44,22 @@ export default function Navbar() {
     <header className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.brandWrapper}>
-          <div className={styles.logoBadge}>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#818cf8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M2 17L12 22L22 17" stroke="#818cf8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M2 12L12 17L22 12" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </div>
-          <div className={styles.brandText}>
-            <span className={styles.brandName}>Webora</span>
-            <span className={styles.brandTagline}>MODERN WEB ARCHITECTURE</span>
-          </div>
+          <Image
+            src="/logo.png"
+            alt="Webora Logo"
+            width={150}
+            height={150}
+          />
+
         </Link>
+
 
         {/* Desktop Navigation Pill Container */}
         <nav className={styles.navPillContainer}>
           <ul className={styles.navLinks}>
             {navItems.map((item) => {
-              const isActive = item.href === '/' 
-                ? pathname === '/' 
+              const isActive = item.href === '/'
+                ? pathname === '/'
                 : pathname.startsWith(item.href) && item.href !== '/#services';
               return (
                 <li key={item.name}>
