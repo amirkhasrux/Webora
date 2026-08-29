@@ -1,9 +1,10 @@
 .form {
-  background-color: var(--color-white);
+  background-color: rgba(15, 23, 42, 0.65);
   padding: var(--spacing-2xl);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid var(--color-border);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(79, 70, 229, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
 }
 
 .formGrid {
@@ -20,7 +21,7 @@
 
 .formGroup label {
   font-weight: 600;
-  color: var(--color-text);
+  color: #e2e8f0;
   margin-bottom: var(--spacing-xs);
   font-size: 0.9375rem;
 }
@@ -32,9 +33,9 @@
   padding: 0.875rem 1rem;
   font-size: 1rem;
   font-family: var(--font-primary);
-  color: var(--color-text);
-  background-color: var(--color-white);
-  border: 2px solid var(--color-border);
+  color: #f8fafc;
+  background-color: rgba(3, 7, 18, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-md);
   transition: all var(--transition-fast);
 }
@@ -43,8 +44,8 @@
 .formGroup select:focus,
 .formGroup textarea:focus {
   outline: none;
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25), 0 0 15px rgba(79, 70, 229, 0.2);
 }
 
 .formGroup input.error,
@@ -59,14 +60,15 @@
 }
 
 .errorText {
-  color: #ef4444;
+  color: #f87171;
   font-size: 0.875rem;
   margin-top: var(--spacing-xs);
 }
 
 .successMessage {
-  background-color: #10b981;
-  color: var(--color-white);
+  background-color: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #6ee7b7;
   padding: var(--spacing-md);
   border-radius: var(--radius-md);
   margin-bottom: var(--spacing-lg);

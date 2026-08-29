@@ -1,31 +1,37 @@
 .ctaSection {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  background: radial-gradient(circle at 50% 50%, rgba(79, 70, 229, 0.18) 0%, rgba(3, 7, 18, 0.95) 75%), #030712;
   padding: var(--spacing-3xl) 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .ctaSection::before {
   content: '';
   position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+  top: -20%;
+  right: 15%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.2) 0%, transparent 70%);
   border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
 }
 
 .ctaSection::after {
   content: '';
   position: absolute;
-  bottom: -50%;
-  left: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%);
+  bottom: -20%;
+  left: 15%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
   border-radius: 50%;
+  filter: blur(40px);
+  pointer-events: none;
 }
 
 .ctaContainer {
@@ -34,16 +40,18 @@
 }
 
 .headline {
-  color: var(--color-white);
-  font-size: clamp(2rem, 4vw, 3rem);
+  color: #ffffff;
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
   margin-bottom: var(--spacing-md);
 }
 
 .subheadline {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  color: #94a3b8;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   margin-bottom: var(--spacing-xl);
-  max-width: 700px;
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
 }

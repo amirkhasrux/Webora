@@ -108,14 +108,13 @@ export default function Home() {
     <main className={styles.main}>
       {/* Hero Section */}
       <Hero
-        headline="We Build Websites That Help New Businesses Grow."
         subheadline="We help entrepreneurs and small businesses turn their ideas into professional, fast, and modern websites that build trust and attract customers."
-        primaryCTA={{ text: 'Start Your Project', href: '/contact' }}
-        secondaryCTA={{ text: 'View Our Work', href: '/portfolio' }}
+        primaryCTA={{ text: 'Explore Solutions', href: '/contact' }}
+        secondaryCTA={{ text: 'Learn More', href: '/about' }}
       />
 
       {/* Services Section */}
-      <section className="section">
+      <section id="services" className="section">
         <div className="container">
           <SectionTitle
             title="Our Services"

@@ -1,11 +1,12 @@
 .aboutPage {
   min-height: 100vh;
-  padding-top: 80px; /* Account for fixed navbar */
+  padding-top: 80px;
 }
 
 .header {
   padding: var(--spacing-3xl) 0 var(--spacing-xl);
-  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  background: radial-gradient(circle at 50% 30%, rgba(79, 70, 229, 0.15) 0%, rgba(3, 7, 18, 0.9) 70%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   margin-bottom: var(--spacing-xl);
 }
 
@@ -18,14 +19,14 @@
 
 .introText h2 {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
-  color: var(--color-primary);
+  color: #f8fafc;
   margin-bottom: var(--spacing-lg);
 }
 
 .introText p {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: var(--color-text-light);
+  color: #94a3b8;
   margin-bottom: var(--spacing-md);
 }
 
@@ -35,21 +36,24 @@
 }
 
 .visualCard {
-  background: linear-gradient(135deg, var(--color-accent) 0%, #8b5cf6 100%);
-  color: var(--color-white);
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  color: #f8fafc;
   padding: var(--spacing-xl);
   border-radius: var(--radius-xl);
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(79, 70, 229, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .visualCard h3 {
-  color: var(--color-white);
+  color: #ffffff;
   font-size: 1.75rem;
   margin-bottom: var(--spacing-md);
 }
 
 .visualCard p {
-  color: rgba(255, 255, 255, 0.95);
+  color: #94a3b8;
   font-size: 1.0625rem;
   line-height: 1.7;
   margin: 0;
@@ -72,13 +76,13 @@
 
 .principleCard h3 {
   font-size: 1.25rem;
-  color: var(--color-primary);
+  color: #f8fafc;
   margin-bottom: var(--spacing-sm);
 }
 
 .principleCard p {
   font-size: 0.9375rem;
-  color: var(--color-text-light);
+  color: #94a3b8;
   line-height: 1.7;
   margin: 0;
 }
@@ -94,20 +98,22 @@
 
 .skillTag {
   padding: 0.75rem 1.5rem;
-  background-color: var(--color-white);
-  color: var(--color-text);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  background-color: rgba(15, 23, 42, 0.65);
+  color: #cbd5e1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  backdrop-filter: blur(10px);
   transition: all var(--transition-normal);
 }
 
 .skillTag:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: rgba(99, 102, 241, 0.5);
+  color: #ffffff;
+  background-color: rgba(79, 70, 229, 0.2);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
 }
 
 .storySection {
@@ -116,16 +122,17 @@
 }
 
 .storyContent {
-  background-color: var(--color-white);
+  background-color: rgba(15, 23, 42, 0.6);
   padding: var(--spacing-2xl);
   border-radius: var(--radius-xl);
-  border: 2px solid var(--color-border);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
 }
 
 .storyContent p {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: var(--color-text-light);
+  color: #94a3b8;
   margin-bottom: var(--spacing-md);
 }
 
@@ -136,7 +143,7 @@
 /* Tablet */
 @media (max-width: 768px) {
   .aboutPage {
-    padding-top: 100px; /* More space on tablet */
+    padding-top: 100px;
   }
 
   .header {
@@ -161,7 +168,7 @@
 /* Mobile */
 @media (max-width: 480px) {
   .aboutPage {
-    padding-top: 80px; /* Extra space on mobile to match Hero section */
+    padding-top: 80px;
   }
 
   .header {

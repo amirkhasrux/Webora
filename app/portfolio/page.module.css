@@ -1,11 +1,12 @@
 .portfolioPage {
   min-height: 100vh;
-  padding-top: 80px; /* Account for fixed navbar */
+  padding-top: 80px;
 }
 
 .header {
   padding: var(--spacing-3xl) 0 var(--spacing-xl);
-  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  background: radial-gradient(circle at 50% 30%, rgba(79, 70, 229, 0.15) 0%, rgba(3, 7, 18, 0.9) 70%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   margin-bottom: var(--spacing-xl);
 }
 
@@ -16,33 +17,36 @@
 .filterContainer {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
   margin-bottom: var(--spacing-2xl);
   flex-wrap: wrap;
 }
 
 .filterButton {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color-text);
-  background-color: var(--color-white);
-  border: 2px solid var(--color-border);
-  border-radius: var(--radius-lg);
+  color: #94a3b8;
+  background-color: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-full);
   cursor: pointer;
+  backdrop-filter: blur(8px);
   transition: all var(--transition-normal);
 }
 
 .filterButton:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  border-color: rgba(99, 102, 241, 0.5);
+  color: #ffffff;
+  background-color: rgba(79, 70, 229, 0.15);
   transform: translateY(-2px);
 }
 
 .filterButton.active {
-  background-color: var(--color-accent);
+  background: var(--color-accent-gradient);
   color: var(--color-white);
-  border-color: var(--color-accent);
+  border-color: transparent;
+  box-shadow: 0 4px 18px rgba(79, 70, 229, 0.45);
 }
 
 .emptyState {
@@ -58,7 +62,7 @@
 /* Tablet */
 @media (max-width: 768px) {
   .portfolioPage {
-    padding-top: 100px; /* More space on tablet */
+    padding-top: 100px;
   }
 
   .header {
@@ -71,19 +75,19 @@
   }
 
   .filterContainer {
-    gap: var(--spacing-sm);
+    gap: var(--spacing-xs);
   }
 
   .filterButton {
-    padding: 0.625rem 1.25rem;
-    font-size: 0.9375rem;
+    padding: 0.55rem 1.1rem;
+    font-size: 0.875rem;
   }
 }
 
 /* Mobile */
 @media (max-width: 480px) {
   .portfolioPage {
-    padding-top: 80px; /* Extra space on mobile to match Hero section */
+    padding-top: 80px;
   }
 
   .header {

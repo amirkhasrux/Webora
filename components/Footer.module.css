@@ -1,8 +1,10 @@
 .footer {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  background-color: #02040a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
   padding: var(--spacing-3xl) 0 var(--spacing-lg);
-  margin-top: var(--spacing-3xl);
+  margin-top: 0;
+  position: relative;
 }
 
 .footerContainer {
@@ -18,43 +20,54 @@
 
 .footerBrand h3 {
   font-size: 1.5rem;
-  color: var(--color-white);
-  margin-bottom: var(--spacing-md);
+  font-weight: 800;
+  color: #f8fafc;
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: -0.02em;
 }
 
 .footerBrand p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #94a3b8;
   margin-bottom: var(--spacing-lg);
   font-size: 0.9375rem;
+  line-height: 1.65;
+  max-width: 320px;
 }
 
 .socialLinks {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .socialLinks a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: var(--radius-md);
-  color: var(--color-white);
-  transition: all var(--transition-normal);
+  width: 72px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-full);
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
 }
 
 .socialLinks a:hover {
-  background-color: var(--color-accent);
-  transform: translateY(-3px);
+  background-color: #4f46e5;
+  border-color: #6366f1;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
 }
 
 .footerLinks h4 {
-  font-size: 1.125rem;
-  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f8fafc;
   margin-bottom: var(--spacing-md);
-  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .footerLinks ul {
@@ -64,34 +77,35 @@
 }
 
 .footerLinks ul li {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 0.65rem;
 }
 
 .footerLinks ul li a {
-  color: rgba(255, 255, 255, 0.8);
+  color: #94a3b8;
   text-decoration: none;
-  font-size: 0.9375rem;
-  transition: color var(--transition-fast);
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
 }
 
 .footerLinks ul li a:hover {
-  color: var(--color-white);
+  color: #ffffff;
+  padding-left: 3px;
 }
 
 .footerLinks ul li:not(:has(a)) {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9375rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
 }
 
 .footerBottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding-top: var(--spacing-lg);
   text-align: center;
 }
 
 .footerBottom p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.875rem;
+  color: #64748b;
+  font-size: 0.85rem;
   margin: 0;
 }
 
