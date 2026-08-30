@@ -89,7 +89,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4>Location</h4>
-                    <p>Apbn Staff Quater, Chandrima, Sector-2, Uttara, Dhaka</p>
+                    <p>Uttara Sector-2, Uttara, Dhaka, Bangladesh</p>
                   </div>
                 </div>
               </div>

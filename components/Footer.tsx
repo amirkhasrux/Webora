@@ -10,15 +10,15 @@ export default function Footer() {
           <div className={styles.footerBrand}>
             <h3>Webora</h3>
             <p>
-              We help entrepreneurs and small businesses turn their ideas into professional, 
+              We help entrepreneurs and small businesses turn their ideas into professional,
               fast, and modern websites that build trust and attract customers.
             </p>
             <div className={styles.socialLinks}>
               <a href="https://facebook.com/iam.amirkhasru" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 Facebook
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                LinkedIn
+              <a href="https://wa.me/+8801632323161" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                WhatsApp
               </a>
               <a href="https://github.com/amirkhasrux" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 GitHub
@@ -55,7 +55,7 @@ export default function Footer() {
               <li>Amir Khasru</li>
               <li>amirkhasru32@gmail.com</li>
               <li>+8801632323161</li>
-              <li>Apbn Staff Quater, Uttara Sector-2, Dhaka</li>
+              <li>Uttara Sector-2, Uttara, Dhaka, Bangladesh</li>
             </ul>
           </div>
         </div>
